@@ -15,7 +15,7 @@ export default function Login() {
     axios
       .get("https://reqres.in/api/users?page=2")
       .then((response) => {
-        setUsers(response.data.data); 
+        setUsers(response.data.data);
       })
       .catch((error) => {
         console.error("Error fetching users:", error);
